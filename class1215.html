@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Styled Buttons</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling for the buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease; /* Adding a smooth transition for the hover effect */
+    }
+
+    /* Assigning distinct colors to each button */
+    .button:nth-child(1) {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .button:nth-child(2) {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .button:nth-child(3) {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+
+    .button:nth-child(4) {
+      background-color: #f39c12;
+      color: #fff;
+    }
+
+    /* Hover effect */
+    .button:hover {
+      transform: scale(1.1); /* Slightly scale up on hover */
+    }
+  </style>
+</head>
+
+<body>
+<h1>Button</h1>
+<!-- <script >
+  var name;
+  name=window.prompt("please enter your name");
+  alert('Hello'+name+'Crrurent date:'+ Date());
+  </script> -->
+
+<!-- <script >
+  var 1;
+  1=window.prompt("please enter nunber");
+  var 2;
+  2=window.prompt("please enter nunber");
+  var intotal= parseint(1)+parseint(2) /*轉換變數*/
+  document.writeln('<p>answer'+intotal)
+  alert(1+2);
+  </script> -->
+
+  <script >
+  var one;
+  alert("please enter nunber");
+  one=window.prompt("please enter nunber");
+  var two;
+  alert("please enter nunber");
+  two=window.prompt("please enter nunber");
+  if(one>two)
+    {document.body.style.backgroundColor='lightblue';
+  document.writeln(one+'>'+two);}
+  else if(one<two)
+    {document.body.style.backgroundColor='orange';
+  document.writeln(one+'<'+two);}
+  else{document.body.style.backgroundColor='lightyellow';
+  document.writeln(one+'=='+two);}
+  </script>
+
+  <!-- Button Container -->
+  <div class="button-container">
+    <button class="button" onclick="alert('haha');">Button 1</button>
+    
+    <button class="button"onclick="alert('hehe');">Button 2</button>
+    
+    <button class="button" onclick="document.body.style.backgroundColor='blue';">Blue</button>
+
+    <button class="button"onclick="document.body.style.backgroundColor='green';">Green</button>
+
+    <button class="button"onclick="alert('reset background color');document.body.style.backgroundColor='white';">Reset BG color</button>
+  </div>
+
+
+</body>
+
+</html>
